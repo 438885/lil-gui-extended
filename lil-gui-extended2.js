@@ -501,7 +501,7 @@ export function injectGUIStyles(customCSS = "", targetRoot = typeof document !==
 
 //#endregion
 
-//#region 2: Tooltip & Accessibility Manager (1.1, 6.3)
+//#region 2: Tooltip & Accessibility Manager
 
 let tooltipUidCounter = 0;
 
@@ -907,7 +907,7 @@ function registerMetricTicker(rootGui, ctrl, options = {}) {
 
 //#endregion
 
-//#region 4: Reactivity, Dirty State & Quick Reset (2.1, 4.2)
+//#region 4: Reactivity, Dirty State & Quick Reset
 
 function cloneValue(val) {
   if (Array.isArray(val)) return [...val];
@@ -1630,7 +1630,7 @@ function setupPresetBar(gui, options = {}) {
 
 //#endregion
 
-//#region 5B: Top Search & Utility Bar (3.1)
+//#region 6: Top Search & Utility Bar
 
 /**
  * Injects an optional sticky Top Bar with instant search/filtering (`/` or `Ctrl+K`),
@@ -1869,7 +1869,7 @@ function setupTopBar(gui, options = {}) {
 
 //#endregion
 
-//#region 6: Custom Widgets — Button Row, Segmented Pills & Dual Range Slider (5.3, 5.4)
+//#region 7: Custom Widgets — Button Row, Segmented Pills & Dual Range Slider
 
 /**
  * Base controller implementation compatible with lil-gui's lifecycle, hierarchy, save/load, and event bubbling.
@@ -2336,7 +2336,7 @@ function createRangeController(gui, object, property, min = 0, max = 100, step =
 
 //#endregion
 
-//#region 7: Declarative Schema Builder v2 (4.1)
+//#region 8: Declarative Schema Builder v2
 
 const TUPLE_MODIFIER_KEYS = new Set([
   "tooltip",
@@ -2481,7 +2481,7 @@ function buildSchemaEntries(containerGui, entries, defaultTarget, isMetrics) {
 
 //#endregion
 
-//#region 8: Prototype Extension & ExtendedGUI Subclass
+//#region 9: Prototype Extension & ExtendedGUI Subclass
 
 /**
  * Extends lil-gui's prototype with tooltips, formatted metrics, dirty state, persistence, presets, history, top bar, widgets, and schemas.
